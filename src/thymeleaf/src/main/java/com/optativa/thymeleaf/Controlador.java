@@ -17,7 +17,7 @@ public class Controlador {
     }
 
 	@GetMapping("/saluda")
-	public String saludo(@RequestParam(required = false, defaultValue = "Test") String name, Model modelo) {
+	public String saludo(@RequestParam(required = false, defaultValue = "Ana") String name, Model modelo) {
 		System.out.println("#####  Entra en /saluda");
 		//String name = "Manuel";
 		modelo.addAttribute("nombre", name);
